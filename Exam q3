@@ -48,6 +48,22 @@ public class Queue{
 --------------------------------------------------------------
 
 a)  Explain what a Stack is.  Specify if it is LIFO or FIFO.
+Stack is a list of nodes(links or items) that are piled one on the top of the other and has a policy of last in first out (LIFO).
 b)  Complete the Stack class by writing the "pop" method.
+public Link pop(){
+Link temp=head;
+head=head.next;
+length=length-1;
+return temp;}
 c)  Explain what a Queue is.  Specify if it is LIFO or FIFO.
+Queue is also a list of nodes(links or items) that are linked sequencely. Queue is always that a first item comes in at the back and the first of the queue is removed. (First In First Out,FIFO)
 d)  Complete the Queue class by writing the "peek" and "remove" methods.
+public Link remove(){
+Link temp= this.peek();
+length=length-1;
+return temp;}
+public Link peek(){
+Link temp=head;}
+for(int i=1; i<length;i++){
+temp=temp.next;}
+return temp;}
