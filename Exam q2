@@ -12,7 +12,7 @@ public interface Greetings{
 
 a)  Explain what an interface is.
 
-Interface is like a class but it is not defined.
+Interface is like a class that has a set of fields and methos where methods are not defined.
 
 b)  Write a complete class for a language speaker of your choice, like ItalianSpeaker, which fully implements the interface.
 
@@ -20,7 +20,7 @@ public interface EnglishSpeaker inplements Greetings{
  String formal;
  String casual;
  public String FormalHello(){
- formalHello= "Hello";}
+ return formal+"Hello";}
  public String CasualHello(){
- causalHello= "Hype";}
+ return casual+"Hype";}
 }
